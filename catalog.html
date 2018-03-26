@@ -8,7 +8,7 @@
   <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo">
+    <a class="main-header-logo" href="index.html">
       <img src="img/logo.png" width="138" height="70" alt="логотип города Седона"></a>
   <ul class="site-navigation">
     <li class="site-item"><a href="info.html">Информация</a></li>
@@ -17,8 +17,44 @@
     <li class="site-item site-item_current"><a>Гостиницы</a></li>
   </ul> 
   </nav>
-</header>  
-<!--Здесь будет форма -->
+</header>
+<section class="selection-block">
+  <form class="selection-form" action="#" method="post">
+    <div class="infrasrtrucure-item">
+      <h2>Инфраструктура:</h2>
+      <input type="checkbox" name="pool" value="Бассейн" id="checkbox01" checked>
+      <label for="checkbox01">Бассейн</label>
+      <input type="checkbox" name="parking" value="Парковка" id="checkbox02">
+      <label for="checkbox02">Парковка</label>
+      <input type="checkbox" name="wifi" value="Wi-Fi" id="checkbox03">
+      <label for="checkbox03">Wi-Fi</label>
+    </div>
+    <div class="housetype-item">
+      <h2>Тип жилья:</h2>
+      <input type="checkbox" name="hotel" value="Гостиница" id="checkbox04" checked>
+      <label for="checkbox04">Гостиница</label>
+      <input type="checkbox" name="motel" value="Мотель" id="checkbox05" checked>
+      <label for="checkbox05">Мотель</label>
+      <input type="checkbox" name="apartments" value="Апартаменты" id="checkbox06" checked>
+      <label for="checkbox06">Апартаменты</label>
+    </div>
+    <div class="cost-filter">
+      <div class="cost-filter-title">Стоимость в сутки (р):</div>
+      <div class="cost-control">
+        <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></labe>
+        <label class="cost-to">До <input type="text" name="to" value="3000" id="to-value"></label>
+      </div>
+      <div class="cost-range">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button type="button" name="show">Показать</button>
+    </div>
+  </form>
+</section>
 <main>
   <div class="hotel-result">
     <ul class="hotel-result_part">
